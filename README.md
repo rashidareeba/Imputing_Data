@@ -44,5 +44,7 @@ median_imputer = SimpleImputer(strategy="median")
 df["city_development_index"] = median_imputer.fit_transform(df[["city_development_index"]])
 
 📊 When to Use What?
+
 ✅ Mean Imputation → Good for continuous data with no extreme outliers.
+
 ✅ Median Imputation → Robust against skewed distributions and outliers.

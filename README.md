@@ -27,14 +27,17 @@ Ensure no missing values remain and distributions remain consistent.
 
 # 🛠️ Implementation
 🔹 Pandas Example
-# Mean imputation
+
+ Mean imputation
 df["training_hours"] = df["training_hours"].fillna(df["training_hours"].mean())
 
  Median imputation
 df["city_development_index"] = df["city_development_index"].fillna(df["city_development_index].median())
 
 🔹 Scikit-learn Example
+
 from sklearn.impute import SimpleImputer
+
  Mean Imputer
 mean_imputer = SimpleImputer(strategy="mean")
 df["training_hours_imputed"] = mean_imputer.fit_transform(df[["training_hours"]])

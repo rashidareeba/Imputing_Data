@@ -1,4 +1,4 @@
-📊 Data Science Job Dataset – Missing Value Imputation
+📊 # Data Science Job Dataset – Missing Value Imputation
 This project explores the Data Science Job dataset (data_science_job.csv) and demonstrates how to clean and preprocess missing values using pandas and scikit-learn.
 The goal is to build a reliable preprocessing pipeline that improves data quality for downstream tasks such as machine learning modeling and job market analytics.
 
@@ -35,11 +35,11 @@ df["city_development_index"] = df["city_development_index"].fillna(df["city_deve
 
 🔹 Scikit-learn Example
 from sklearn.impute import SimpleImputer
-# Mean Imputer
+ Mean Imputer
 mean_imputer = SimpleImputer(strategy="mean")
 df["training_hours_imputed"] = mean_imputer.fit_transform(df[["training_hours"]])
 
-# Median Imputer
+ Median Imputer
 median_imputer = SimpleImputer(strategy="median")
 df["city_development_index"] = median_imputer.fit_transform(df[["city_development_index"]])
 

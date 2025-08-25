@@ -1,8 +1,8 @@
-📊 # Data Science Job Dataset – Missing Value Imputation
+# 📊Data Science Job Dataset – Missing Value Imputation
 This project explores the Data Science Job dataset (data_science_job.csv) and demonstrates how to clean and preprocess missing values using pandas and scikit-learn.
 The goal is to build a reliable preprocessing pipeline that improves data quality for downstream tasks such as machine learning modeling and job market analytics.
 
-📖 Project Overview
+# 📖 Project Overview
 
 Real-world datasets often contain missing values in critical fields such as:
 Demographics (e.g., gender, education level, major discipline)
@@ -10,7 +10,7 @@ Professional details (e.g., company size, company type, relevant experience)
 Training-related features (e.g., training hours, city_development_index)
 This project demonstrates mean and median imputation strategies to handle missing values effectively.
 
-🚀 Workflow
+# 🚀 Workflow
 Load the dataset
 import pandas as pd
 df = pd.read_csv("data_science_job.csv")
@@ -25,12 +25,12 @@ Median Imputation → for skewed numeric features or those with outliers (e.g., 
 Validate results
 Ensure no missing values remain and distributions remain consistent.
 
-🛠️ Implementation
+# 🛠️ Implementation
 🔹 Pandas Example
 # Mean imputation
 df["training_hours"] = df["training_hours"].fillna(df["training_hours"].mean())
 
-# Median imputation
+ Median imputation
 df["city_development_index"] = df["city_development_index"].fillna(df["city_development_index].median())
 
 🔹 Scikit-learn Example
